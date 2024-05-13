@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+
+    <menu class="menu__mobile-container flex">
+      <div class="menu__shadow"></div>
+      <div class="menu__content">
+        <div class="menu__icon-wrap flex"><a href="#"><img id="close" src="images/icon-close-menu.svg" alt="icon close"></a></div>
+        <ul class="menu__list">
+          <li id="feature"><button>Features <img src="images/icon-arrow-down.svg" alt="icon arrow close"> <img class="hidden" src="images/icon-arrow-up.svg" alt="icon arrow open"></button></li>
+            <ul class="menu__features-list drop">
+              <li><a href="#"><img src="images/icon-todo.svg" alt="">Todo List</a></li>
+              <li><a href="#"><img src="images/icon-calendar.svg" alt="">Calender</a></li>
+              <li><a href="#"><img src="images/icon-reminders.svg" alt="">Reminders</a></li>
+              <li><a href="#"><img src="images/icon-planning.svg" alt="">Planning</a></li>
+            </ul>
+          <li id="company"><button>Company <img src="images/icon-arrow-down.svg" alt="icon"></button></li>
+            <ul class="menu__company-list drop">
+              <li><a href="#">History</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <div class="menu__btn-wrap flex">
+          <button class="menu__login-btn">Login</button>
+          <button class="menu__register-btn">Register</button>
+        </div>
+        
+      </div>
+      
+    </menu>
+
+    <nav class="nav-container flex">
+      <div class="nav__logo-wrap"><img src="images/logo.svg" alt=""></div>
+      <div class="nav__icon-wrap"><a id="open" href="#"><img src="images/icon-menu.svg" alt=""></a></div>
+      <div class="nav__content">
+        <ul class="nav__list-wrap flex">
+          <div class="drop-down">
+            <li id="feature"><button>Features <img id="down" src="images/icon-arrow-down.svg" alt="icon close"> <img class="hidden" id="up" src="images/icon-arrow-up.svg" alt="icon open"></button></li>
+            <ul class="menu-desk__features-list list">
+              <li><a href="#"><img src="images/icon-todo.svg" alt="">Todo List</a></li>
+              <li><a href="#"><img src="images/icon-calendar.svg" alt="">Calender</a></li>
+              <li><a href="#"><img src="images/icon-reminders.svg" alt="">Reminders</a></li>
+              <li><a href="#"><img src="images/icon-planning.svg" alt="">Planning</a></li>
+            </ul>
+          </div>
+          <div class="drop-down">
+            <li id="company"><button>Company <img id="down-sec" src="images/icon-arrow-down.svg" alt="icon close"> <img  class="hidden" id="up-sec" src="images/icon-arrow-up.svg" alt="icon open"></button></li>
+            <ul class="menu-desk__company-list list">
+              <li><a href="#">History</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <div class="nav__btns-wrap flex">
+          <button class="nav__login-btn">Login</button>
+          <button class="nav__register-btn">Register</button>
+        </div>
+      </div> 
+    </nav>
+    
+    <main class="main-container">
+      <div class="main__img-wrap">
+        <img class="main__img-desktop" src="images/image-hero-desktop.png" alt="A man working on a laptop">
+        <img class="main__img-mobile" src="images/image-hero-mobile.png" alt="A man working on a laptop">
+      </div>
+      <div class="main__content-wrap">
+        <h1 class="main__title">Make remote work</h1>
+        <p class="main__descr">Get your team in sync, 
+        no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.</p>
+        <button class="main__btn">Learn more</button>
+        <div class="main__coop flex">
+          <div><img src="images/client-databiz.svg" alt=""></div>
+          <div><img src="images/client-audiophile.svg" alt=""></div>
+          <div><img src="images/client-meet.svg" alt=""></div>
+          <div><img src="images/client-maker.svg" alt=""></div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
